@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h1>🛒 ShopSphere</h1>
+    <div class="cart">
+        Cart 🛍 <span id="cart-count">0</span>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero">
+    <h2>Everything You Love, In One Place</h2>
+    <p>Toys • Fashion • Skincare</p>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products">
+
+    <div class="card">
+        <img src="https://i.pinimg.com/originals/23/bf/a7/23bfa774eb503426d3278247aa6aaae3.jpg" alt="Toy">
+        <h3>Teddy Bear</h3>
+        <p class="price">₹499</p>
+        <button onclick="addToCart('Teddy Bear')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://i.pinimg.com/236x/a5/89/4e/a5894e6426016f9c2f1e4a04b614ce73.jpg" alt="Clutch">
+        <h3>Designer Clutch</h3>
+        <p class="price">₹899</p>
+        <button onclick="addToCart('Designer Clutch')">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <img src="https://www.dotandkey.com/cdn/shop/articles/image_2.png?v=1739257332&width=1100" alt="Skincare">
+        <h3>Sunscreen SPF 50</h3>
+        <p class="price">₹699</p>
+        <button onclick="addToCart('Sunscreen SPF 50')">Add to Cart</button>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2025 ShopSphere | Cloud Deployed Website</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
