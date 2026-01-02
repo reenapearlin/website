@@ -19,12 +19,11 @@ body {
     align-items: center;
 }
 
-.cart span {
+.cart-icon span {
     background: white;
     color: #4a148c;
     padding: 4px 8px;
     border-radius: 50%;
-    font-weight: bold;
 }
 
 /* HERO */
@@ -32,7 +31,7 @@ body {
     background: linear-gradient(to right, #6a1b9a, #8e24aa);
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px;
 }
 
 /* PRODUCTS */
@@ -49,11 +48,6 @@ body {
     padding: 15px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: scale(1.05);
 }
 
 .card img {
@@ -73,20 +67,37 @@ button {
     background: #4a148c;
     color: white;
     border: none;
-    padding: 10px 15px;
+    padding: 10px;
     cursor: pointer;
     border-radius: 6px;
 }
 
-button:hover {
-    background: #311b92;
+/* CART SECTION */
+.cart-section {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.cart-section ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.cart-section li {
+    padding: 5px 0;
+}
+
+.clear-btn {
+    background: red;
+    margin-top: 10px;
 }
 
 /* FOOTER */
 footer {
-    background: #111;
+    background: black;
     color: white;
     text-align: center;
-    padding: 12px;
-    margin-top: 20px;
+    padding: 10px;
 }

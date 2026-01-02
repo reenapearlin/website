@@ -11,12 +11,12 @@
 <!-- NAVBAR -->
 <nav class="navbar">
     <h1>🛒 ShopSphere</h1>
-    <div class="cart">
+    <div class="cart-icon">
         Cart 🛍 <span id="cart-count">0</span>
     </div>
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 <section class="hero">
     <h2>Everything You Love, In One Place</h2>
     <p>Toys • Fashion • Skincare</p>
@@ -26,26 +26,34 @@
 <section class="products">
 
     <div class="card">
-        <img src="https://i.pinimg.com/originals/23/bf/a7/23bfa774eb503426d3278247aa6aaae3.jpg" alt="Toy">
+        <img src="https://i.pinimg.com/originals/23/bf/a7/23bfa774eb503426d3278247aa6aaae3.jpg">
         <h3>Teddy Bear</h3>
         <p class="price">₹499</p>
-        <button onclick="addToCart('Teddy Bear')">Add to Cart</button>
+        <button onclick="addToCart('Teddy Bear', 499)">Add to Cart</button>
     </div>
 
     <div class="card">
-        <img src="https://i.pinimg.com/236x/a5/89/4e/a5894e6426016f9c2f1e4a04b614ce73.jpg" alt="Clutch">
+        <img src="https://i.pinimg.com/236x/a5/89/4e/a5894e6426016f9c2f1e4a04b614ce73.jpg">
         <h3>Designer Clutch</h3>
         <p class="price">₹899</p>
-        <button onclick="addToCart('Designer Clutch')">Add to Cart</button>
+        <button onclick="addToCart('Designer Clutch', 899)">Add to Cart</button>
     </div>
 
     <div class="card">
-        <img src="https://www.dotandkey.com/cdn/shop/articles/image_2.png?v=1739257332&width=1100" alt="Skincare">
+        <img src="https://www.dotandkey.com/cdn/shop/articles/image_2.png?v=1739257332&width=1100">
         <h3>Sunscreen SPF 50</h3>
         <p class="price">₹699</p>
-        <button onclick="addToCart('Sunscreen SPF 50')">Add to Cart</button>
+        <button onclick="addToCart('Sunscreen SPF 50', 699)">Add to Cart</button>
     </div>
 
+</section>
+
+<!-- CART DETAILS -->
+<section class="cart-section">
+    <h2>🧾 Cart Details</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: ₹<span id="total-price">0</span></h3>
+    <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
 </section>
 
 <!-- FOOTER -->
